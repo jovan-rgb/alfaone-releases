@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlfaOne untuk iPhone — Download IPA</title>
+  <meta name="description" content="Download build IPA AlfaOne (unsigned) untuk iPhone. Pasang lewat Sideloadly atau AltStore.">
+  <meta name="theme-color" content="#e31e24">
+  <meta property="og:title" content="AlfaOne untuk iPhone — Download IPA">
+  <meta property="og:description" content="Build IPA unsigned untuk dipasang via Sideloadly/AltStore.">
+  <meta property="og:type" content="website">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="icon.png">
+  <style>
+    :root {
+      --red: #e31e24;
+      --orange: #f39200;
+      --ink: #172033;
+      --muted: #687386;
+      --line: #e7eaf0;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --warn-bg: #fff8e6;
+      --warn-line: #f2d27a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 50% -220px, #ffe3e3 0%, rgba(255,227,227,0) 70%),
+        var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 8px 0 22px;
+    }
+
+    .logo {
+      width: 104px;
+      height: 104px;
+      border-radius: 26px;
+      box-shadow: 0 12px 30px rgba(227, 30, 36, .18);
+      background: #fff;
+    }
+
+    h1 {
+      font-size: clamp(28px, 7vw, 38px);
+      line-height: 1.1;
+      margin: 18px 0 8px;
+      letter-spacing: -.02em;
+    }
+
+    .tagline {
+      margin: 0 auto;
+      max-width: 480px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(23, 32, 51, .05);
+    }
+
+    .download {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 17px 20px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--red), var(--orange));
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(227, 30, 36, .28);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .download:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(227, 30, 36, .34); }
+    .download:active { transform: translateY(0); }
+
+    .download svg { flex: 0 0 auto; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .chip {
+      font-size: 12px;
+      color: var(--muted);
+      background: #f2f4f8;
+      border-radius: 999px;
+      padding: 6px 10px;
+      white-space: nowrap;
+    }
+
+    .sha {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .sha a { color: var(--red); text-decoration: none; font-weight: 600; }
+    .sha code {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 4px 7px;
+      background: #f2f4f8;
+      border-radius: 7px;
+      font-size: 11px;
+      color: #3a4356;
+      word-break: break-all;
+    }
+
+    h2 {
+      font-size: 19px;
+      margin: 30px 0 12px;
+      letter-spacing: -.01em;
+    }
+
+    ol.steps {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: step;
+    }
+
+    ol.steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 0 0 16px 46px;
+      color: #3a4356;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+
+    ol.steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: -2px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--red);
+      background: #ffecec;
+    }
+
+    ol.steps li:last-child { padding-bottom: 0; }
+
+    .steps b { color: var(--ink); }
+
+    .warn {
+      margin-top: 22px;
+      padding: 14px 16px;
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-line);
+      border-radius: 14px;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #6b5410;
+    }
+
+    details {
+      border-top: 1px solid var(--line);
+      padding: 14px 0;
+    }
+
+    details:last-of-type { border-bottom: 1px solid var(--line); }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14.5px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--muted); font-weight: 400; font-size: 18px; }
+    details[open] summary::after { content: "–"; }
+
+    details p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+
+    .foot {
+      margin-top: 34px;
+      text-align: center;
+      color: #98a1b0;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .foot a { color: var(--muted); }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #eef1f6;
+        --muted: #a5aebd;
+        --line: #2a3140;
+        --bg: #0f131b;
+        --card: #161c27;
+        --warn-bg: #2a230f;
+        --warn-line: #5b4a1c;
+      }
+      body {
+        background:
+          radial-gradient(1200px 600px at 50% -220px, #3a1518 0%, rgba(58,21,24,0) 70%),
+          var(--bg);
+      }
+      .chip, .sha code { background: #202836; }
+      .chip { color: #b9c1ce; }
+      .sha code { color: #c7cedb; }
+      ol.steps li { color: #c3cad6; }
+      ol.steps li::before { background: #3a1a1c; }
+      .warn { color: #e6d49a; }
+      .logo { background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img class="logo" src="icon.png" alt="AlfaOne" width="104" height="104">
+      <h1>AlfaOne untuk iPhone</h1>
+      <p class="tagline">
+        Build IPA untuk membuka layanan intranet AlfaOne di iPhone.
+        Unduh, tanda tangani dengan Apple ID-mu, lalu install lewat Sideloadly atau AltStore.
+      </p>
+    </section>
+
+    <section class="card">
+      <a class="download" href="https://github.com/jovan-rgb/alfaone-releases/releases/latest/download/AlfaOneRebuild-unsigned.ipa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v11m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Download IPA (unsigned)
+      </a>
+
+      <div class="meta">
+        <span class="chip">v0.1.1 (2)</span>
+        <span class="chip">iOS 15+</span>
+        <span class="chip">arm64 / iPhone</span>
+        <span class="chip">± 217 KB</span>
+      </div>
+
+      <p class="sha">
+        Verifikasi unduhan:
+        <a href="https://github.com/jovan-rgb/alfaone-releases/releases/latest/download/AlfaOneRebuild-unsigned.ipa.sha256">SHA-256</a><br>
+        <code>ade116bd82c53989acc12d2b10145a141cb307816705af45694a0ba699dad6ab</code>
+      </p>
+    </section>
+
+    <h2>Cara install</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><b>Download IPA</b> lewat tombol di atas.</li>
+        <li>Pasang <b>Sideloadly</b> (Windows/macOS) atau <b>AltStore</b> di komputer/iPhone.</li>
+        <li>Hubungkan iPhone, login dengan <b>Apple ID</b>, pilih file IPA, lalu mulai proses signing &amp; install.</li>
+        <li>Di iPhone: <b>Settings → General → VPN &amp; Device Management</b> → pilih developer Apple ID-mu → <b>Trust</b>.</li>
+        <li>Buka aplikasi <b>AlfaOne</b>. Selesai.</li>
+      </ol>
+
+      <div class="warn">
+        <b>Penting:</b> file ini <b>unsigned</b> (belum ditandatangani), jadi tidak bisa dipasang langsung
+        seperti aplikasi App Store. Kamu harus menandatanganinya dengan Apple ID sendiri.
+        Apple ID gratis: aplikasi berlaku <b>7 hari</b> dan perlu di-sign ulang. Apple Developer berbayar: <b>1 tahun</b>.
+      </div>
+    </div>
+
+    <h2>Pertanyaan umum</h2>
+    <div class="card" style="padding-top: 4px; padding-bottom: 4px;">
+      <details open>
+        <summary>Apakah ini dari App Store?</summary>
+        <p>Tidak. Ini build internal (unsigned) yang didistribusikan untuk instalasi mandiri. Aplikasi tidak melalui review App Store.</p>
+      </details>
+
+      <details>
+        <summary>Kenapa harus di-sign sendiri?</summary>
+        <p>iOS hanya mau menjalankan aplikasi yang ditandatangani sertifikat Apple yang valid. Sideloadly/AltStore membuat tanda tangan sementara memakai Apple ID-mu, tanpa perlu akun developer berbayar.</p>
+      </details>
+
+      <details>
+        <summary>Apa saja isi aplikasinya?</summary>
+        <p>Menu intranet AlfaOne (APP INTRANET Original, Human Capital, RRAK, BST Online, KOPKAR, SO Karyawan, SO ATM/Tenant) yang dibuka di dalam WebView. Login, SSO, dan hak akses tetap mengikuti sistem resmi SAT.</p>
+      </details>
+
+      <details>
+        <summary>Apakah notifikasi push dan absensi native tersedia?</summary>
+        <p>Belum. Build ini membungkus situs intranet; fitur native seperti push notification, biometric login, dan bridge absensi belum diport. Halaman web yang meminta kamera/lokasi tetap bisa memakai izin iOS.</p>
+      </details>
+
+      <details>
+        <summary>Kenapa build-nya unsigned?</summary>
+        <p>Sertifikat distribusi Apple Developer tidak disertakan dalam repo publik. Build unsigned bisa diunduh siapa saja, lalu ditandatangani di perangkat masing-masing.</p>
+      </details>
+    </div>
+
+    <p class="foot">
+      Build dari <a href="https://github.com/jovan-rgb/alfaone-api">repo sumber</a> (private) ·
+      <a href="https://github.com/jovan-rgb/alfaone-releases/releases">semua rilis</a><br>
+      Gunakan hanya untuk sistem yang memang berhak kamu akses.
+    </p>
+  </main>
+</body>
+</html>
