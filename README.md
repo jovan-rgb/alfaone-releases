@@ -10,12 +10,15 @@ Halaman distribusi publik untuk build IPA **AlfaOne untuk iPhone**.
 
 | Item | Nilai |
 | --- | --- |
-| Versi | 0.1.1 (2) |
+| Versi | 0.1.1 (2) — build terbaru |
 | Minimum iOS | 15.0 |
 | Arsitektur | arm64 (iPhone) |
 | Ukuran | ± 217 KB |
 | Status | **unsigned** — perlu di-sign sebelum install |
 | Bundle ID | `com.ric.alfaone.rebuild` |
+
+> Checksum tersedia sebagai asset `AlfaOneRebuild-unsigned.ipa.sha256` di setiap rilis dan
+> diperbarui otomatis oleh workflow build.
 
 ## Cara install
 
